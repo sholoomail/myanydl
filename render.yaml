@@ -1,0 +1,22 @@
+services:
+  # A background worker that consumes a queue
+  - type: worker
+    name: myanydl
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    repo: https://github.com/sholoomail/myanydl.git
+    branch: main
+    envVars:
+      - key: TG_BOT_TOKEN 
+        sync: false
+      - key: APP_ID 
+        sync: false
+      - key: API_HASH 
+        sync: false
+      - key: CHUNK_SIZE 
+        value: 128
+      - key: AUTH_USERS 
+        value: 146676294
+      - key: WEBHOOK 
+        value: ANYTHING
