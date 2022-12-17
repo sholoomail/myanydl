@@ -8,7 +8,6 @@ moviepy
 requests
 psutil
 tgcrypto
-git+https://github.com/code-x-mania/yt-new-dl.git
-git+https://github.com/code-x-mania/yt-new-dlp.git
+git+https://github.com/Mancek/Youtube-API.git
 olefile
 pyshorteners
