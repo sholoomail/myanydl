@@ -1,11 +1,10 @@
 services:
-  # A background worker that consumes a queue
   - type: worker
     name: myanydl
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: python bot.py
-    repo: https://github.com/sholoomail/myanydl.git
+    repo: https://github.com/Adarsh-Goel/anydl.git
     branch: main
     envVars:
       - key: TG_BOT_TOKEN 
